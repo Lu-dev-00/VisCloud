@@ -3,7 +3,7 @@
   }
   
 body{
-    z-index: 1;
+    z-index: -999;
 }
 
   /*
@@ -14,6 +14,18 @@ body{
     background-color: rgba(0, 0, 0, .85);
     -webkit-backdrop-filter: saturate(180%) blur(20px);
     backdrop-filter: saturate(180%) blur(20px);
+    color:white;
+  }
+
+  .site-header-light{
+    background-color: rgba(219, 219, 219, 0.85);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+    
+  }
+
+  .site-header-light * {
+    color:black;
   }
   .site-header a {
     color: #999;
@@ -60,6 +72,7 @@ body{
     width: 100%;
     height: 100%;
     z-index: -1;
+    pointer-events: none;
   }
 
 .show-particles{
@@ -70,4 +83,32 @@ body{
     .main-content-container{
         margin:0 100px;
     }
+}
+
+.landing {
+  height: 100vh;
+  background-color: rgba(31, 31, 31, 0.856);
+  color:black;
+  background-image: url("/VisCloud/cloud.png"), url("/VisCloud/bg.jpg");
+  background-position:right bottom;
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+
+.landing-image{
+  background-image: url("/VisCloud/london.jpg");
+  background-position:right bottom;
+  background-repeat:no-repeat;
+  background-size:cover;
+  z-index: -5;
+
+} 
+
+.card-shadow{
+  -webkit-box-shadow: -4px 6px 17px 2px rgba(75,75,75,0.33); 
+box-shadow: -4px 6px 17px 2px rgba(75,75,75,0.33);
+}
+
+.above{
+  z-index:3;
 }
