@@ -89,7 +89,7 @@ body{
   height: 100vh;
   background-color: rgba(31, 31, 31, 0.856);
   color:black;
-  background-image: url("../london.jpg"), url("../london.jpg");
+  background-image: url("../cloud.png"), url("../bg.jpg");
   background-position:right bottom;
   background-repeat:no-repeat;
   background-size:cover;
